@@ -55,3 +55,4 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/nul
 
 #zsh-auto-suggestion
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '^i' autosuggest-accept # Ctrl + Space to accept suggestions
