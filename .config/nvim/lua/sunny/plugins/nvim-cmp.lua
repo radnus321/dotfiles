@@ -30,7 +30,7 @@ return {
         },
 
         mapping = {
-          ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+          ['<tab>'] = cmp.mapping.confirm({ select = true }),
           ['<C-e>'] = cmp.mapping.abort(),
           ['<Up>'] = cmp.mapping.select_prev_item({ behavior = 'select' }),
           ['<Down>'] = cmp.mapping.select_next_item({ behavior = 'select' }),
