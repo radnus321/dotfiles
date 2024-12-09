@@ -1,3 +1,0 @@
-cd /home/sundarmatu/Desktop/crispat_webapp_benjamin/client/
-kitty @ launch --type=tab --title "Client" bash -c "npm run dev"
-kitty @ launch --type=tab --title "Server" bash -c "cd /home/sundarmatu/Desktop/crispat_webapp_benjamin/server/ && npm start"

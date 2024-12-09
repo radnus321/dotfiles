@@ -4,7 +4,7 @@ SAVEHIST=20000
 HISTFILE=~/.zsh_history
 # Append history in every terminal session
 setopt appendhistory 
-
+setopt sharehistory
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -50,5 +50,8 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 eval "$(starship init zsh)"
 
-# Load zsh-syntax-highlighting; should be last.
+#zsh-syntax-highlighting
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+#zsh-auto-suggestion
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
