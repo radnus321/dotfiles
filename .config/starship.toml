@@ -2,7 +2,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # Inserts a blank line between shell prompts
-add_newline = true
+add_newline = false 
 
 # Timeout for commands executed by starship (in milliseconds).
 command_timeout = 3600000
@@ -49,9 +49,9 @@ format = '[\($state( $progress_current of $progress_total)\)]($style) '
 
 [git_status]
 conflicted = "⚔️ "
-ahead = "🏎️ 💨 ×${count} "
+ahead = "🏎️ ×${count} "
 behind = "🐢 ×${count} "
-diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count} "
+diverged = "🔱 🏎️ ×${ahead_count} 🐢 ×${behind_count} "
 untracked = "🛤️  ×${count} "
 stashed = "📦 "
 modified = "📝 ×${count} "

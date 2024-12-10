@@ -5,6 +5,7 @@ HISTFILE=~/.zsh_history
 # Append history in every terminal session
 setopt appendhistory 
 setopt sharehistory
+setopt autocd
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -55,4 +56,4 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/nul
 
 #zsh-auto-suggestion
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '^i' autosuggest-accept # Ctrl + Space to accept suggestions
+# bindkey '^ ' autosuggest-accept # Ctrl + Space to accept suggestions
